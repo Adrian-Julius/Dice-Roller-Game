@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: radial-gradient(
+    circle,
+    rgb(242, 239, 255) 0%,
+    rgb(227, 254, 255) 100%
+  );
+}
+
+/* HEADER AND FOOTER STYLING */
+header,
+footer {
+  flex-shrink: 0;
+  width: 100%;
+  padding: 5px 30px;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: whitesmoke;
+  text-shadow: 3px 5px 3px grey;
+  background: radial-gradient(
+    circle,
+    rgb(155, 152, 51) 0%,
+    rgb(100, 100, 13) 100%
+  );
+}
+
+header img {
+  width: 100px;
+  margin: 3px;
+}
+
+header h2 {
+  padding: 0 5px;
+  font-size: 2em;
+}
+
+footer h3 {
+  font-size: 1.3em;
+}
+
+/* Dice Roller Container */
+.diceRollerContainer {
+  width: 100vw;
+  min-width: 290px;
+  margin: 10vh auto;
+
+  text-align: center;
+}
+
+.diceRollerContainer > input {
+  padding: 5px 15px;
+
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.diceRollerContainer > input:hover {
+  box-shadow: 0 0 3px black;
+}
+
+.diceRollerContainer > button {
+  padding: 6.5px 15px;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgb(65, 65, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.diceRollerContainer > button:hover {
+  background-color: rgb(0, 0, 195);
+}
+
+.diceRollerContainer > button:active {
+  background-color: rgb(8, 8, 139);
+  box-shadow: 0 0 3px blue;
+}
+
+.title {
+  margin-bottom: 0;
+  color:  rgb(8, 8, 139);
+}
+
+#dices {
+  padding: 0 10%;
+  margin-top: 5px;
+
+  color: blue;
+  font-size: 25px;
+}
+
+#diceImagesDisplay {
+  padding: 0 9.5%;
+}
+
+#diceImagesDisplay > img {
+  width: 10%;
+  min-width: 55px;
+  margin: 1%;
+
+  border-radius: 10px;
+}
+
+/* ----- Responsive -----*/
+@media (max-width: 470px) {
+  .diceRollerContainer {
+    margin: 10vh auto;
+  }
+
+  .diceRollerContainer > input,
+  .diceRollerContainer > button {
+    display: block;
+    margin: 0 auto 15px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+
+  #diceImagesDisplay {
+  padding: 0 4%;
+}
+}
+
+@media (max-width: 390px) {
+  .diceRollerContainer > input,
+  .diceRollerContainer > button {
+    font-size: 15px;
+  }
+
+  h1, #dices {
+    font-size: 1em;
+  }
+
+
+
+}

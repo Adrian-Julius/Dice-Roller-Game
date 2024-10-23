@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roller Game</title>
+
+    <!-- Icon link-->
+    <link
+      rel="shortcut icon"
+      href="./assets/diceRollerLogoIcon.jpg"
+      type="image/x-icon"
+    />
+
+    <!-- CSS link-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/diceRollerLogo.png" alt="" />
+      <h2>Dice Roller</h2>
+      <img src="./assets/diceRollerLogo.png" alt="" />
+    </header>
+
+    <div class="diceRollerContainer">
+      <input
+        type="number"
+        id="inputNumber"
+        min="1"
+        placeholder="Number of Dices"
+        required
+      />
+      <button type="submit" onclick="diceRoller()">Roll</button>
+      <h1 class="title">DICES:</h1>
+      <h1 id="dices"></h1>
+      <h1 id="result">Total values:</h1>
+
+      <div id="diceImagesDisplay"></div>
+    </div>
+
+    <footer>
+      <h3>© 2024 Adrian Julius Villaruel. All rights reserved.</h3>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
